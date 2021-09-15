@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "BjdpPbDgQ2FPYNPM3yyiJILRRS9NRKdsUdwMMm4bjFIPATHwF7yNPSVcpW84lOuyQ4O5r2uLmRWAVwK5ovqfSA==",
+  "success": true,
+  "projectFilePath": "G:\\My Drive\\Programmering\\Skole\\C#\\FolkeskoleSearchEngine\\FolkeskoleSearchEngine\\FolkeskoleSearchEngine.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\runem\\.nuget\\packages\\csvhelper\\27.1.1\\csvhelper.27.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}

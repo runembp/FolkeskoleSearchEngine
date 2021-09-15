@@ -1,0 +1,48 @@
+@page "/"
+@using FolkeskoleSearchEngine.Data
+@inject SchoolService _schoolService
+
+<p>
+    <label>
+        Search school: 
+        <input placeholder="School name" @bind="_userInput" />
+    </label>
+    <button @onclick="UpdateHeading">
+        Search
+    </button>
+</p>
+
+<b><div class="row">
+    <div class="col">Type</div>
+    <div class="col">Name</div>
+    <div class="col">Address</div>
+    <div class="col">Telephone</div>
+    <div class="col">Web</div>
+</div></b>
+@foreach (var school in _schools)
+{
+    <div class="row">
+        <div class="col">@school.Type</div>
+        <div class="col">@school.Navn</div>
+        <div class="col">@school.Address</div>
+        <div class="col">@school.Telephone</div>
+        <div class="col"><a href="@school.WebAddress">@school.WebAddress</a></div>
+    </div>
+}
+
+@code{
+    
+    private string _userInput;
+    
+    private List<School> _schools;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _schools = await _schoolService.ListFromCsv();
+    }
+
+    private async Task UpdateHeading()
+    {
+        _schools = await _schoolService.ListFromCsvWithNameFiltered(_userInput);
+    }
+}
