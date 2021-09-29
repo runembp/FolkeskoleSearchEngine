@@ -5,14 +5,25 @@ using System.Threading.Tasks;
 
 namespace FolkeskoleSearchEngine.Data
 {
+    internal enum SchoolEnum
+    {
+        Name = 2,
+        Street = 4,
+        PostCode = 5,
+        City = 6,
+        Telephone = 7,
+        Webaddress = 9,
+        Type = 11
+    }
+    
     public class SchoolService
     {
         private List<School> _schoolList = new();
         
-        public Task<List<School>> ListFromCsv()
+        public Task<List<School>> ListFromCsv(string path = "folkeskoler.csv")
         {
             _schoolList = new List<School>();
-            var csvData = File.ReadAllLines("folkeskoler.csv");
+            var csvData = File.ReadAllLines(path);
 
             for(var i = 1; i < csvData.Length; i++)
             {
@@ -20,14 +31,13 @@ namespace FolkeskoleSearchEngine.Data
                     continue;
                 
                 var splitData = csvData[i].Split(";");
-                _schoolList.Add(new School()
+                _schoolList.Add(new School
                 {
-                    Id = splitData[1],
-                    Navn = splitData[2],
-                    Address = $"{splitData[4]}, {splitData[5]} {splitData[6]}",
-                    Telephone = splitData[7],
-                    WebAddress = splitData[9],
-                    Type = splitData[11]
+                    Navn = splitData[(int) SchoolEnum.Name],
+                    Address = $"{splitData[(int) SchoolEnum.Street]}, {(int) SchoolEnum.PostCode} {(int) SchoolEnum.City}",
+                    Telephone = splitData[(int) SchoolEnum.Telephone],
+                    WebAddress = splitData[(int) SchoolEnum.Webaddress],
+                    Type = splitData[(int) SchoolEnum.Type]
                 });
             }
 

@@ -1,25 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "G:\\My Drive\\Programmering\\Skole\\C#\\FolkeskoleSearchEngine\\FolkeskoleSearchEngine\\FolkeskoleSearchEngine.csproj": {}
+    "G:\\Mit drev\\Programmering\\Skole\\C#\\FolkeskoleSearchEngine\\FolkeskoleSearchEngine\\FolkeskoleSearchEngine.csproj": {}
   },
   "projects": {
-    "G:\\My Drive\\Programmering\\Skole\\C#\\FolkeskoleSearchEngine\\FolkeskoleSearchEngine\\FolkeskoleSearchEngine.csproj": {
+    "G:\\Mit drev\\Programmering\\Skole\\C#\\FolkeskoleSearchEngine\\FolkeskoleSearchEngine\\FolkeskoleSearchEngine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\My Drive\\Programmering\\Skole\\C#\\FolkeskoleSearchEngine\\FolkeskoleSearchEngine\\FolkeskoleSearchEngine.csproj",
+        "projectUniqueName": "G:\\Mit drev\\Programmering\\Skole\\C#\\FolkeskoleSearchEngine\\FolkeskoleSearchEngine\\FolkeskoleSearchEngine.csproj",
         "projectName": "FolkeskoleSearchEngine",
-        "projectPath": "G:\\My Drive\\Programmering\\Skole\\C#\\FolkeskoleSearchEngine\\FolkeskoleSearchEngine\\FolkeskoleSearchEngine.csproj",
-        "packagesPath": "C:\\Users\\runem\\.nuget\\packages\\",
-        "outputPath": "G:\\My Drive\\Programmering\\Skole\\C#\\FolkeskoleSearchEngine\\FolkeskoleSearchEngine\\obj\\",
+        "projectPath": "G:\\Mit drev\\Programmering\\Skole\\C#\\FolkeskoleSearchEngine\\FolkeskoleSearchEngine\\FolkeskoleSearchEngine.csproj",
+        "packagesPath": "C:\\Users\\rp\\.nuget\\packages\\",
+        "outputPath": "G:\\Mit drev\\Programmering\\Skole\\C#\\FolkeskoleSearchEngine\\FolkeskoleSearchEngine\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\runem\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\rp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\runem\\.dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

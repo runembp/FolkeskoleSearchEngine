@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "BjdpPbDgQ2FPYNPM3yyiJILRRS9NRKdsUdwMMm4bjFIPATHwF7yNPSVcpW84lOuyQ4O5r2uLmRWAVwK5ovqfSA==",
+  "dgSpecHash": "HcZReplrZ/bS9Wt2XkUP2+n9kjIi/azUu6D9jcy//hyydbYfPLcTLLBGtxUj449zru8kM1I+l1MbZyvm1wQI4g==",
   "success": true,
-  "projectFilePath": "G:\\My Drive\\Programmering\\Skole\\C#\\FolkeskoleSearchEngine\\FolkeskoleSearchEngine\\FolkeskoleSearchEngine.csproj",
+  "projectFilePath": "G:\\Mit drev\\Programmering\\Skole\\C#\\FolkeskoleSearchEngine\\FolkeskoleSearchEngine\\FolkeskoleSearchEngine.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\runem\\.nuget\\packages\\csvhelper\\27.1.1\\csvhelper.27.1.1.nupkg.sha512"
+    "C:\\Users\\rp\\.nuget\\packages\\csvhelper\\27.1.1\\csvhelper.27.1.1.nupkg.sha512"
   ],
   "logs": []
 }
